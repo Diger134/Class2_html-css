@@ -371,6 +371,8 @@ input{
     width: 500px;
     height: 40px;
     border-radius: 5px;
+    font-size: 1.3em;
+    padding-left: 5px;
 }
 input::-webkit-input-placeholder {
     font-family: ArialMT;
@@ -379,7 +381,7 @@ input::-webkit-input-placeholder {
 }
 textarea::-webkit-input-placeholder {
     font-family: ArialMT;
-    font-size: 1.3em;
+    font-size: 1.05em;
     color: #445162;
 }
 textarea{
@@ -387,6 +389,9 @@ textarea{
     height: 170px;
     border-radius: 5px;
     resize: none;
+    font-size: 1.5em;
+    padding-left: 5px;
+    padding-top: 5px;
 }
 .contacts_form_button{
     width: 140px;
