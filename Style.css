@@ -160,7 +160,6 @@ section {
 }
 
 .pluses_headline {
-    width: 100%;
     margin: 0 0 25px 0;
     text-align: center;
 }
@@ -195,7 +194,6 @@ section {
 }
 
 .screenshots_headline {
-    width: 100%;
     margin: 0 0 35px 0;
     text-align: center;
 }
@@ -241,7 +239,6 @@ section {
 
 .reviews_headline {
     text-align: center;
-    width: 100%;
     margin: 0 0 25px 0;
 }
 
@@ -286,7 +283,204 @@ section {
     line-height: 1.2em;
     font-style: italic;
 }
+.buy_it_now {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.buy_it_now_headline{
+    margin: 0 0 35px 0;
+    text-align: center;
+}
+.buy_it_now_content{
+    text-align: center;
+    border: 2px solid #445161;
+    border-radius: 2%;
+}
 
+.buy_it_now_content_headline{
+    font-weight: 500;
+    font-size: 1.4em;
+    line-height: 1em;
+    margin: 0;
+    padding: 17px 0;
+}
+
+.buy_it_now_content_price{
+    font-size: 2.5em;
+    line-height: 0.8em;
+    font-weight: 400;
+    margin: 0;
+    padding: 18px 0;
+}
+.buy_it_now_content_list{
+    text-align: left;
+    margin: 0;
+    padding: 19px 38px 19px 40px;
+}
+.buy_it_now_content_list li {
+    font-size: 1em;
+    line-height: 1.4em;
+}
+button{
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.buy_it_now_content_button{
+    width: 270px;
+    height: 40px;
+}
+button:hover{
+    opacity: .6;
+}
+button:active{
+    border: 3px solid #445161;
+}
+.contacts{
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.contacts_headline{
+    margin: 0 0 35px 0;
+    text-align: center;
+}
+.contacts_form{
+    text-align: center;
+}
+.contacts_form_input_wrapper{
+    display: block;
+    margin-bottom: 20px;
+}
+input{
+    width: 500px;
+    height: 40px;
+    border-radius: 5px;
+}
+input::-webkit-input-placeholder {
+    font-family: ArialMT;
+    font-size: 1.3em;
+    color: #445162;
+}
+textarea::-webkit-input-placeholder {
+    font-family: ArialMT;
+    font-size: 1.3em;
+    color: #445162;
+}
+textarea{
+    width: 500px;
+    height: 170px;
+    border-radius: 5px;
+    resize: none;
+}
+.contacts_form_button{
+    width: 140px;
+    height: 40px;
+}
+.contacts_info{
+    margin-left: 35px;
+}
+.contacts_info_text{
+    position: relative;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    margin-left: 30px;
+}
+.contacts_info_text_icon1:before{
+    content: "";
+	background: url(img/skype_icon.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 24px;
+    height: 26px;
+    top: -1px;
+    position: absolute;
+    left: -31px;
+}
+.contacts_info_text_icon2:before{
+    content: "";
+	background: url(img/icq_icon.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    top: -1px;
+    position: absolute;
+    left: -31px;
+}
+.contacts_info_text_icon3:before{
+    content: "";
+	background: url(img/email_icon.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    top: -1px;
+    position: absolute;
+    left: -31px;
+}
+.contacts_info_text_icon4:before{
+    content: "";
+	background: url(img/phone_icon.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 26px;
+    height: 26px;
+    top: -1px;
+    position: absolute;
+    left: -31px;
+}
+.contacts_info_sprite{
+	display:flex;
+}
+.contacts_info_sprite_icon{
+	width: 43px;
+    height: 42px;
+    margin-right: 10px;
+}
+.icon_twitter{
+	background: url(img/icons_sprite.png);
+}
+.icon_fasebook{
+	background: url(img/icons_sprite.png);
+	background-position: -289px 0;
+}
+.icon_instagram{
+	background: url(img/icons_sprite.png);
+	background-position: -338px 0;
+}
+.icon_google{
+	background: url(img/icons_sprite.png);
+	background-position: -388px 0;
+}
+.icon_youtube{
+	background: url(img/icons_sprite.png);
+	background-position: -437px 0;
+}
+.contacts_info_sprite_icon_link{
+	margin: 0;
+    display: flex;
+    width: 43px;
+    height: 42px;
+}
+.contacts_info_sprite_icon:hover{
+	opacity: .5;
+}
 footer {
     font-size: 0.8em;
     text-align: center;
