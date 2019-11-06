@@ -105,7 +105,7 @@ body {
     display: block;
     width: 25px;
     height: 19px;
-    background-image: url(img/check_mark.png);
+    background-image: url('img/check_mark.png');
     -webkit-background-size: cover;
     background-size: cover;
     position: absolute;
@@ -428,7 +428,7 @@ textarea{
 }
 .contacts_info_text_icon1:before{
     content: "";
-	background: url(img/skype_icon.png);
+	background: url('img/skype_icon.png');
     -webkit-background-size: cover;
     background-size: cover;
     width: 24px;
@@ -439,7 +439,7 @@ textarea{
 }
 .contacts_info_text_icon2:before{
     content: "";
-	background: url(img/icq_icon.png);
+	background: url('img/icq_icon.png');
     -webkit-background-size: cover;
     background-size: cover;
     width: 26px;
@@ -450,7 +450,7 @@ textarea{
 }
 .contacts_info_text_icon3:before{
     content: "";
-	background: url(img/email_icon.png);
+	background: url('img/email_icon.png');
     -webkit-background-size: cover;
     background-size: cover;
     width: 26px;
@@ -461,7 +461,7 @@ textarea{
 }
 .contacts_info_text_icon4:before{
     content: "";
-	background: url(img/phone_icon.png);
+	background: url('img/phone_icon.png');
     -webkit-background-size: cover;
     background-size: cover;
     width: 26px;
@@ -479,22 +479,22 @@ textarea{
     margin-right: 10px;
 }
 .icon_twitter{
-	background: url(img/icons_sprite.png);
+	background: url('img/icons_sprite.png');
 }
 .icon_fasebook{
-	background: url(img/icons_sprite.png);
+	background: url('img/icons_sprite.png');
 	background-position: -289px 0;
 }
 .icon_instagram{
-	background: url(img/icons_sprite.png);
+	background: url('img/icons_sprite.png');
 	background-position: -338px 0;
 }
 .icon_google{
-	background: url(img/icons_sprite.png);
+	background: url('img/icons_sprite.png');
 	background-position: -388px 0;
 }
 .icon_youtube{
-	background: url(img/icons_sprite.png);
+	background: url('img/icons_sprite.png');
 	background-position: -437px 0;
 }
 .contacts_info_sprite_icon_link{

@@ -8,14 +8,14 @@ html {
 .form_wrapper {
     width: 680px;
     height: 320px;
-    background-image: url(img/bg_70.jpg);
+    background-image: url('img/bg_70.jpg');
     margin: 200px auto;
 }
 
 form {
     width: 626px;
     height: 320px;
-    background-image: url(img/bg_71.jpg);
+    background-image: url('img/bg_71.jpg');
     margin: 0 auto;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -30,7 +30,7 @@ form {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     border: 1px solid #c5c8cc;
-    background-image: url(img/bg_form.jpg);
+    background-image: url('img/bg_form.jpg');
     border-radius: 9px;
     padding: 73px 27px 0 27px;
     margin: 33px auto 0 auto;
