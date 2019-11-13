@@ -1,0 +1,77 @@
+.video_presentation_container
+    position: relative
+    background-color: #fbfaf8
+.video_presentation
+    width: 100%
+.video_presentation_content
+    display: flex
+    flex-wrap: wrap
+    position: absolute
+    top: 30%
+    flex-direction: column
+    align-items: center
+    transition: all 1s
+    .video_presentation_content_button
+        width: 100px
+        height: 100px
+        background-color: rgba(0, 0, 0, 0.3)
+        border-radius: 50%
+        box-sizing: border-box
+        border: none
+        &:hover 
+            .video_presentation_content_button_img
+                cursor: pointer
+                fill: #c7b299
+                transition: all 0.5s
+        &:focus
+            border: 2px solid #c7b299
+            outline: none
+        .video_presentation_content_button_img
+            fill: #fff
+            transition: all 0.5s
+            border-radius: 50%
+    .video_presentation_content_txt
+        max-width: 550px
+        margin-bottom: 40px
+    .video_presentation_content_timer
+        font-family: 'Montserrat', sans-serif
+.excellent_for_mobile_devices
+    display: flex
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: flex-start
+    box-sizing: border-box
+    background-image: url('../img/excellent_for_mobile_devices_bgimg.png')
+    min-height: 700px
+    background-repeat: no-repeat
+    background-position: 20% 100%
+    padding: 155px 0 0 40% 
+    transition: all 0.5s
+    .excellent_for_mobile_devices_txt
+        text-align: left
+        max-width: 660px
+        margin-bottom: 45px
+        font-size: 1em
+    li
+        position: relative
+        list-style: none
+        text-align: left
+        max-width: 660px
+        margin-left: 50px
+        &::before
+            position: absolute
+            content: ''
+            left: -40px
+            top: 6px
+            width: 21px
+            height: 21px
+            background-image: url('../img/excellent_for_mobile_devices_list_icon.png')
+            
+    
+@media screen and (max-width: 1300px)
+    .video_presentation_content
+        top: 5%
+        transition: all 1s
+    .excellent_for_mobile_devices
+        background-position: 4% 100%
+        transition: all 0.5s

@@ -3,11 +3,11 @@
 /* Примеры локальной подгрузки шрифтов */
 /* @font-face {
     font-family: 'ralewaylight';
-    src: url(fonts/webfontkit-20191109-075032/raleway-light-webfont.eot);
-    src: url(fonts/webfontkit-20191109-075032/raleway-light-webfont.eot?#iefix) format('embedded-opentype'),
-         url(fonts/webfontkit-20191109-075032/raleway-light-webfont.woff2) format('woff2'),
-         url(fonts/webfontkit-20191109-075032/raleway-light-webfont.woff) format('woff'),
-         url(fonts/webfontkit-20191109-075032/raleway-light-webfont.ttf) format('ttf');
+    src: url(../fonts/webfontkit-20191109-075032/raleway-light-webfont.eot);
+    src: url(../fonts/webfontkit-20191109-075032/raleway-light-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/webfontkit-20191109-075032/raleway-light-webfont.woff2) format('woff2'),
+         url(../fonts/webfontkit-20191109-075032/raleway-light-webfont.woff) format('woff'),
+         url(../fonts/webfontkit-20191109-075032/raleway-light-webfont.ttf) format('ttf');
     font-weight: normal;
     font-style: normal;
 
@@ -15,11 +15,11 @@
 
 @font-face {
     font-family: 'montserratbold';
-    src: url(fonts/webfontkit-20191109-080343/montserrat-bold-webfont.eot);
-    src: url(fonts/webfontkit-20191109-080343/montserrat-bold-webfont.eot?#iefix) format('embedded-opentype'),
-         url(fonts/webfontkit-20191109-080343/montserrat-bold-webfont.woff2) format('woff2'),
-         url(fonts/webfontkit-20191109-080343/montserrat-bold-webfont.woff) format('woff'),
-         url(fonts/webfontkit-20191109-080343/montserrat-bold-webfont.ttf) format('ttf');
+    src: url(../fonts/webfontkit-20191109-080343/montserrat-bold-webfont.eot);
+    src: url(../fonts/webfontkit-20191109-080343/montserrat-bold-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/webfontkit-20191109-080343/montserrat-bold-webfont.woff2) format('woff2'),
+         url(../fonts/webfontkit-20191109-080343/montserrat-bold-webfont.woff) format('woff'),
+         url(../fonts/webfontkit-20191109-080343/montserrat-bold-webfont.ttf) format('ttf');
     font-weight: normal;
     font-style: normal;
 
@@ -33,7 +33,7 @@ html {
 
 body {
     font-family: 'Raleway', sans-serif;
-    min-width: 1006px;
+    min-width: 900px;
     width: 100%;
     height: 100%;
     margin: 0;
@@ -145,7 +145,7 @@ button {
 .header_and_slider_container {
     position: relative;
     ;
-    background-image: url('img/header_slider_bg.jpg');
+    background-image: url('../img/header_slider_bg.jpg');
     background-size: 100% 100%;
     min-height: 1024px;
     padding: 40px 0 40px 0;
@@ -378,7 +378,7 @@ input:-ms-input-placeholder {
 .service_content::after {
     content: '';
     display: block;
-    background-image: url('img/services_img.png');
+    background-image: url('../img/services_img.png');
     width: 70px;
     height: 3px;
     margin: 30px auto 0 auto;
@@ -393,7 +393,7 @@ input:-ms-input-placeholder {
 }
 
 .service_content:hover::after {
-    background-image: url('img/services_img_active.png');
+    background-image: url('../img/services_img_active.png');
     cursor: pointer;
 
 }
@@ -437,7 +437,7 @@ input:-ms-input-placeholder {
 .realization_of_your_ideas_screenshots {
     width: 80%;
     height: 482px;
-    background-image: url(img/center_screenshot.jpg), url(img/right_screenshot.jpg), url(img/left_screenshot.jpg);
+    background-image: url('../img/center_screenshot.jpg'), url('../img/right_screenshot.jpg'), url('../img/left_screenshot.jpg');
     background-position: 48.5% 0, 100% 82px, 0 82px;
     background-repeat: no-repeat;
     background-size: 62% 482px, 62% 400px, 62% 400px;
@@ -523,6 +523,7 @@ input:-ms-input-placeholder {
     position: relative;
     margin-bottom: 20px;
     background-color: #000;
+    box-shadow: 0 0 5px 1px;
 }
 
 .latest_project_content_hover_functions {
@@ -625,3 +626,15 @@ footer {
     left: 0;
     bottom: 0;
 }
+@media screen and (max-width: 1300px) {
+    .latest_project {
+    padding: 80px 7%;
+    }
+    .main_header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider {
+        padding-top: 189px;
+    }
+  }
