@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" href="css/Style2.css">
     <link rel="stylesheet" href="css/Style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
@@ -15,7 +15,10 @@
     <div class="wrapper">
         <div class="content">
 
-            <div class="header_and_slider_container">
+            <div class="galery_container bg_555555">
+                <div class="slider_galery_img_content">
+                    <img src="img/galery_img_1.jpg" alt="IMG" class="slider_galery_img">
+                </div>
                 <header class="main_header">
                     <a href="index.html" class="main_header_logo_link">
                         <svg class="main_header_logo_img" xmlns="http://www.w3.org/2000/svg" width="66px" height="59px">
@@ -86,13 +89,13 @@
 
 
                 </section>
-                <div class="slider_pagination w100">
-                    <a href="#" class="slider_pagination_link"></a>
-                    <a href="#" class="slider_pagination_link slider_pagination_link_active"></a>
-                    <a href="#" class="slider_pagination_link"></a>
-                    <a href="#" class="slider_pagination_link"></a>
-                    <a href="#" class="slider_pagination_link"></a>
-                </div>
+                <ul class="slider_paginations_list w100">
+                    <li class="slider_pagination"></li>
+                    <li class="slider_pagination slider_pagination_active"></li>
+                    <li class="slider_pagination"></li>
+                    <li class="slider_pagination"></li>
+                    <li class="slider_pagination"></li>
+                </ul>
             </div>
             <main>
                 <section class="services">
@@ -339,7 +342,9 @@
                     <button class="buttons latest_project_button text_white">Load More</button>
                 </section>
                 <section class="video_presentation_container">
-                    <video class="video_presentation" src="#" poster="img/video_poster.jpg"></video>
+                    <div class="video_presentation_video_wrapper">
+                        <video class="video_presentation" src="#" poster="img/video_poster.jpg"></video>
+                    </div>
                     <div class="video_presentation_content position-absolute w100">
                         <button class="video_presentation_content_button">
                             <svg class="video_presentation_content_button_img" xmlns="http://www.w3.org/2000/svg"
@@ -366,6 +371,120 @@
                         <li>Eodem modo typi, qui nunc nobis videntur parum futurum;</li>
                         <li>Investigationes demonstraverunt lectores</li>
                     </ul>
+                </section>
+                <section class="counters">
+                    <figure class="counter">
+                        <img src="img/counter_satisfied_clients.svg" alt="IMG" class="counter_img">
+                        <figcaption class="counter_content">
+                            <span class="counter_content_number text_white">3587</span>
+                            <span class="counter_content_txt text_c7b299">Satisfied Clients</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="counter">
+                        <img src="img/сups_of_coffee.svg" alt="IMG" class="counter_img">
+                        <figcaption class="counter_content">
+                            <span class="counter_content_number text_white">207</span>
+                            <span class="counter_content_txt text_c7b299">Cups of coffee</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="counter">
+                        <img src="img/blog_posts.svg" alt="IMG" class="counter_img">
+                        <figcaption class="counter_content">
+                            <span class="counter_content_number text_white">2500</span>
+                            <span class="counter_content_txt text_c7b299">Blog posts</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="counter">
+                        <img src="img/likes.svg" alt="IMG" class="counter_img">
+                        <figcaption class="counter_content">
+                            <span class="counter_content_number text_white">873</span>
+                            <span class="counter_content_txt text_c7b299">Likes</span>
+                        </figcaption>
+                    </figure>
+                    <figure class="counter">
+                        <img src="img/we_launched.svg" alt="IMG" class="counter_img">
+                        <figcaption class="counter_content">
+                            <span class="counter_content_number text_white">900</span>
+                            <span class="counter_content_txt text_c7b299">We launched</span>
+                        </figcaption>
+                    </figure>
+                </section>
+                <section class="recent_posts">
+                    <h2 class="recent_posts_title text_555555 h2_font">Recent Posts.</h2>
+                    <p class="recent_posts_txt text_8c8c8c">Investigationes demonstraverunt lectores legere me
+                        lius quod ii legunt saepius.
+                        Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                    <div class="recents_posts_content w100">
+                        <article class="recent_post">
+                            <div class="recent_post_date">
+                                <span class="recent_post_date_day">30</span>
+                                <span class="recent_post_date_month">Sep.</span>
+                            </div>
+                            <ul class="recent_post_paginations_list w100">
+                                <li class="recent_post_pagination"></li>
+                                <li class="recent_post_pagination recent_post_pagination_active"></li>
+                                <li class="recent_post_pagination"></li>
+                                <li class="recent_post_pagination"></li>
+                                <li class="recent_post_pagination"></li>
+                            </ul>
+                            <img src="img/recent_post_img1.jpg" alt="IMG" class="recent_post_img">
+                            <div class="recent_post_txt_content">
+                                <h3 class="recent_post_txt_content_title text_555555 h3_font">Lorem ipsum dolor sit amet
+                                </h3>
+                                <p class="recent_post_txt_content_txt text_8c8c8c p_little_font">Claritas est etiam
+                                    processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                                <a href="#" class="recent_post_txt_content_link text_c7b299 p_little_font">Read More</a>
+                            </div>
+                        </article>
+                        <article class="recent_post recent_post_active">
+                            <div class="recent_post_date recent_post_date_active">
+                                <span class="recent_post_date_day recent_post_date_day_active">30</span>
+                                <span class="recent_post_date_month recent_post_date_month_active">Sep.</span>
+                            </div>
+                            <img src="img/recent_post_img2.jpg" alt="IMG" class="recent_post_img recent_post_img_active">
+                            <div class="recent_post_txt_content recent_post_txt_content_active">
+                                <h3 class="recent_post_txt_content_title recent_post_txt_content_title_active text_555555 h3_font">Lorem ipsum dolor sit amet
+                                </h3>
+                                <p class="recent_post_txt_content_txt recent_post_txt_content_txt_active text_8c8c8c p_little_font">Claritas est etiam
+                                    processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                                <a href="#" class="recent_post_txt_content_link recent_post_txt_content_link_active text_c7b299 p_little_font">Read More</a>
+                            </div>
+                        </article>
+                        <article class="recent_post">
+                            <div class="recent_post_date">
+                                <span class="recent_post_date_day">30</span>
+                                <span class="recent_post_date_month">Sep.</span>
+                            </div>
+                            <img src="img/recent_post_img3.jpg" alt="IMG" class="recent_post_img">
+                            <div class="recent_post_txt_content">
+                                <h3 class="recent_post_txt_content_title text_555555 h3_font">Lorem ipsum dolor sit amet
+                                </h3>
+                                <p class="recent_post_txt_content_txt text_8c8c8c p_little_font">Claritas est etiam
+                                    processus dynamicus, qui sequitur mutationem consuetudium.</p>
+                                <a href="#" class="recent_post_txt_content_link text_c7b299 p_little_font">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="recent_posts_buttons">
+                        <button class="recent_posts_button recent_posts_button_left"></button>
+                        <button class="recent_posts_button recent_posts_button_right"></button>
+                    </div>
+                </section>
+                <section class="partners">
+                    <div class="partners_link_wrapper w100">
+                    <a href="#" class="partners_link">
+                        <img src="img/partners_logo1.png" alt="IMG" class="partners_link_img">
+                    </a>
+                    <a href="#" class="partners_link">
+                            <img src="img/partners_logo2.png" alt="IMG" class="partners_link_img">
+                    </a>
+                    <a href="#" class="partners_link">
+                            <img src="img/partners_logo3.png" alt="IMG" class="partners_link_img">
+                    </a>
+                    <a href="#" class="partners_link">
+                            <img src="img/partners_logo4.png" alt="IMG" class="partners_link_img">
+                    </a>
+                </div>
                 </section>
             </main>
         </div>
