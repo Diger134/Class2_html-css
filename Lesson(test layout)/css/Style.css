@@ -235,7 +235,7 @@ button {
     transition: ease 0.5s;
 }
 
-.main_header_logo_link:hover .main_header_logo_txt {
+.main_header_logo_link:hover .main_header_logo_name {
     color: #998675;
     transition: ease 0.5s;
 }
@@ -248,6 +248,7 @@ button {
 .main_header_links_container {
     display: flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .main_header_menu {
@@ -694,6 +695,7 @@ input:-ms-input-placeholder {
     border: 2px solid #000;
 }
 
+
 @media screen and (max-width: 1300px) {
     .latest_project {
     padding: 80px 7%;
@@ -703,3 +705,11 @@ input:-ms-input-placeholder {
         align-items: center;
     }
   }
+@media screen and (max-width: 1000px) {
+    .main_header_menu {
+        display: none;
+    }
+        .main_header {
+            flex-direction: row;
+        }
+}
