@@ -372,8 +372,72 @@ footer
                     border-right: 1px solid #252525
                     height: 13px
                     padding-right: 12px
-        
-      
+.burger 
+    margin-right: 30px
+    width: 30px
+    height: 30px
+    position: relative
+    display: none
+    .bar 
+        padding: 0
+        width: 30px
+        height: 4px
+        background-color: #fff
+        display: block
+        border-radius: 4px
+        transition: all 0.4s ease-in-out
+        position: absolute
+    .bar1 
+        top: 0
+    .bar2
+        top: 13.5px
+    .bar3 
+        top: 13.5px
+        right: 0
+    .bar4 
+        bottom: 0
+
+.main_header_menu_burger
+    visibility: hidden
+    position: absolute
+    top: 35px
+    left: -270px
+    font-size: 30px
+    width: 540px
+    transition: all 0.5s linear
+    opacity: 0
+    .main_header_menu_list_burger
+        list-style: none
+        padding: 0
+        @include df-row
+        li
+            margin-right: 25px
+            margin-bottom: 20px
+.main_header_links_container_burger
+    display: none
+    &:hover + .fakebox
+        cursor: pointer
+        opacity: .7
+    &:checked + .fakebox
+        .burger
+            .bar1
+                transform: rotate(45deg)
+                transform-origin: 5%
+                width: 41px
+            .bar2
+                transform: translateX(-40px)
+                background-color: transparent
+            .bar3 
+                transform: translateX(40px)
+                background-color: transparent
+            .bar4 
+                transform-origin: 5%     
+                transform: rotate(-45deg)
+                width: 41px
+        + .main_header_menu_burger
+            visibility: visible
+            transition: all 1s linear
+            opacity: 1
 @media screen and (max-width: 1500px)
     .recent_posts
         padding: 80px 5%
@@ -407,5 +471,6 @@ footer
     .partners
         padding: 130px 22% 80px
         transition: all 1s 
-            
-    
+@media screen and (max-width: 1000px)           
+    .burger
+        display: block
